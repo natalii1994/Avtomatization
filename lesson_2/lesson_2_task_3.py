@@ -1,7 +1,7 @@
+import math
 def square(side_square):
     side_square = side_square * side_square
     if side_square % 1 != 0:
-        import math
         side_square = math.ceil(side_square)
         return side_square
     else:
