@@ -26,13 +26,11 @@ class Calculator:
     def avg(self, numbers):
         if(len(numbers) == 0):
             return 0
-        s =0
+        s = 0
         for num in numbers:
             s = self.sum(s, num)
-        
-        lenght = len(numbers)
-
-        return self.div(s, lenght)
+        l = len(numbers)
+        return self.div(s, l)
 
 
 
