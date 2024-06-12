@@ -1,0 +1,5 @@
+{
+  "python.testing.pytestArgs": ["lesson_4"],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
+}
