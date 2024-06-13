@@ -1,3 +1,4 @@
+import pytest
 from calculator import Calculator
 
 calculator = Calculator()
@@ -34,8 +35,8 @@ def test_div_positive():
 
 def test_div_by_zero():
     calculator = Calculator()
-    res = calculator.div(10, 0)
-    assert res == None
+    with pytest.raises(ArithmeticError):
+        calculator.div(10, 0)
 
 def test_avg_empty_list():
     calculator = Calculator()
